@@ -9,24 +9,25 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/cake"
-        android:scaleType="centerCrop"/>
+        android:contentDescription="@string/happybirthdayimage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cake" />
 
     <TextView
         android:id="@+id/birthdayGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="Happy Birthday"
-        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/happy_birthday"
+        android:textAlignment="center"
+        android:textColor="#8B0000"
         android:textSize="48sp"
         android:textStyle="bold"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
