@@ -3,4 +3,6 @@
     <string name="enter_the_name">Enter the Name</string>
     <string name="create_birthday_card">Create Birthday Card</string>
     <string name="input_hint_text">Anuj</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="happybirthdayimage">happyBirthdayImage</string>
 </resources>
