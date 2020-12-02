@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     fun createBirthdayCard(view: View) {
 
-        val name = nameInput.editableText.toString()
+        val nameText = findViewById<EditText>(R.id.nameInput)
+        val name = nameText.text.toString()
 
         Toast.makeText(this, "Entered $name", Toast.LENGTH_LONG).show()
 
