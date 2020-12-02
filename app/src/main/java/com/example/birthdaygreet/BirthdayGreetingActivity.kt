@@ -1,8 +1,8 @@
 package com.example.birthdaygreet
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_birthday_greeting.*
 
 class BirthdayGreetingActivity : AppCompatActivity() {
