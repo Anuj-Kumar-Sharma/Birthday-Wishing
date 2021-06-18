@@ -2,19 +2,23 @@ package com.example.birthdaygreet
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_birthday_greeting.*
 
 class BirthdayGreetingActivity : AppCompatActivity() {
 
-    companion object {
-        const val NAME_EXTRA = "name_extra"
-    }
+    lateinit var birthdayGreeting : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_birthday_greeting)
 
-        val name = intent.getStringExtra(NAME_EXTRA)
-        birthdayGreeting.text = "Happy Birthday\n$name!"
+        birthdayGreeting = findViewById(R.id.birthdayGreeting)
+
+        val userName = intent.getStringExtra("name")
+
+        birthdayGreeting.setText(userName)
+
+
     }
 }
