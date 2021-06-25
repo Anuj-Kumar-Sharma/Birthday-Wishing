@@ -1,3 +1,4 @@
 # Birthday-Wishing
 Android App to wish your friends Birthday,
-I have Modified code of kotlin and changed its full UI
+1) Have Modified code of kotlin.
+2) Changed its full UI and Image Design.
